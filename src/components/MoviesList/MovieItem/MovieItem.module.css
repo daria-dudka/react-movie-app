@@ -1,0 +1,39 @@
+.item {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.content {
+  padding-top: 60px;
+  text-align: left;
+}
+
+.image {
+  position: relative;
+}
+
+.image::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 900px;
+  background-image: url(../../../assets/bg-wave.svg);
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+.image img {
+  width: 600px;
+  height: 900px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text {
+  max-width: 680px;
+  width: 100%;
+  font-size: 26px;
+  margin-bottom: 75px;
+}

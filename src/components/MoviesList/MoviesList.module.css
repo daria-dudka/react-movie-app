@@ -1,0 +1,39 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li+li {
+  margin-top: 260px;
+}
+
+.list li {
+  position: relative;
+  padding-left: 100px;
+}
+
+.list li:nth-child(even) {
+  flex-direction: row-reverse;
+  padding-left: 200px;
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../assets/stickers-totoro-plus-my-neighbor-totoro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 750px;
+  height: 750px;
+  top: 54px;
+  opacity: 0.1;
+}
+
+.list li:nth-child(odd)::before {
+  right: -17%;
+  transform: scale(-1, 1)
+}
+
+.list li:nth-child(even)::before {
+  left: -17%;
+}
