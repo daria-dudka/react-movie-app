@@ -10,7 +10,7 @@ function SingleMoviePage(props) {
         <p>Release date:{props.movie.releasedate}</p>
       </div>
 
-      <Link className='btn single__btn' to={`//react-movie-app`}>
+      <Link className='btn single__btn' to='/react-movie-app/'>
         Back
       </Link>
     </section>

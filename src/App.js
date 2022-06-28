@@ -33,7 +33,7 @@ function App() {
       <Layout>
         <Routes>
           <Route
-            path='/react-movie-app'
+            path='/react-movie-app/'
             element={
               <AllMoviesPage
                 getMovieClickedData={getMovieClickedData}
