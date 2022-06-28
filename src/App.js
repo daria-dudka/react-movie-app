@@ -10,7 +10,6 @@ function App() {
   const [movieClicked, setMovieClicked] = useState([]);
 
   function getMovieClickedData(movie) {
-    console.log(movie);
     setMovieClicked(movie);
   }
 
