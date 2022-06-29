@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './layout/Layout';
-import AllMoviesPage from './pages/AllMovies';
-import SingleMoviePage from './pages/SingleMovie';
+import AllMoviesPage from './pages/AllMoviesPage';
+import SingleMoviePage from './pages/SingleMoviePage';
 
 function App() {
   const [moviesData, setMoviesData] = useState([]);

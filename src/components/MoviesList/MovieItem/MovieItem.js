@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import BtnMain from '../../BtnMain/BtnMain';
 import classes from './MovieItem.module.css';
 
 function MovieItem(props) {
@@ -13,15 +13,13 @@ function MovieItem(props) {
         <img src={props.image} alt={props.title} />
       </div>
       <div className={classes.content}>
-        <h3 className='title'>{props.title}</h3>
+        <h3 className={classes.title}>{props.title}</h3>
         <p className={classes.text}>{props.description}</p>
-        <Link
-          onClick={movieClickedHandler}
-          className='btn'
-          to={`/movie-id/${props.id}`}
-        >
-          See more
-        </Link>
+        <BtnMain
+          text='See more'
+          movieClickedHandler={movieClickedHandler}
+          path={`/movie-id/${props.title}`}
+        />
       </div>
     </li>
   );

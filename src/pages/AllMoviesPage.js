@@ -1,4 +1,4 @@
-import MoviesList from './../components/MoviesList/MoviesList';
+import MoviesList from '../components/MoviesList/MoviesList';
 
 function AllMoviesPage(props) {
   return (

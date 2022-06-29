@@ -4,3 +4,15 @@
   padding: 150px;
   overflow-x: hidden;
 }
+
+@media (max-width: 1670px) {
+  .main {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 40px;
+  }
+}
